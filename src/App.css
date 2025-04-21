@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* Fade-in effect styles */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Initial hidden state for pages */
+.about,
+.contact,
+.services-container {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Apply fade-in to each specific section */
+.contact.fade-in,
+.about.fade-in,
+.services-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

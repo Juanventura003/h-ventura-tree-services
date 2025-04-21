@@ -1,0 +1,37 @@
+.service-page {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .service-page h1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+  }
+  
+  .service-page p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+  }
+  

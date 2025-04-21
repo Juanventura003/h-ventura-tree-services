@@ -1,0 +1,185 @@
+.services-container {
+  padding: 0;
+  text-align: center;
+  background-color: #f4f7f6;
+  overflow-x: hidden;
+}
+
+/* === HERO SECTION === */
+.services-hero {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* === MAIN SECTION === */
+.services-main {
+  padding: 60px 20px;
+}
+
+.services-intro {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.wave-divider {
+  height: 80px;
+  background: url('https://svgshare.com/i/11vx.svg') repeat-x bottom;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+/* === CARDS === */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+/* === CTA BUTTON === */
+.cta-button {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+.services-cta {
+  margin-top: 60px;
+}
+
+/* === Learn More (Outline) Button === */
+.cta-button.outline {
+  background-color: transparent;
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  margin-top: 15px;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button.outline:hover {
+  background-color: #2e7d32;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* === Animations === */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(46, 125, 50, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 125, 50, 0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .services-container h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .services-intro {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}

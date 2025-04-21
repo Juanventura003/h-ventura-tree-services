@@ -1,0 +1,146 @@
+.about-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    background-color: #f4f7f6;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .hero {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+  }
+  
+  .overlay h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overlay p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .about-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .about-section li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .about-section li::before {
+    content: '🌿';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .tagline-box {
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #2e7d32;
+  }
+  
+  .cta-button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 0.75rem;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-footer {
+    background: #2e7d32;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .overlay h1 {
+      font-size: 2rem;
+    }
+  
+    .about-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-section p,
+    .overlay p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
