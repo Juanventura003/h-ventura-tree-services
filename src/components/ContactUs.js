@@ -16,10 +16,10 @@ function ContactUs() {
 
     emailjs
       .sendForm(
-        'service_2n97jqk',        // ✅ Your service ID
-        'template_uyzunuw',       // ✅ Updated Template ID
+        'service_2n97jqk',
+        'template_uyzunuw',
         form.current,
-        '80fvT2wv3n0M3h0Vn'       // ✅ Your public key
+        '80fvT2wv3n0M3h0Vn'
       )
       .then((result) => {
         console.log('✅ Email sent:', result.text);
@@ -36,13 +36,16 @@ function ContactUs() {
     <div className={`contact ${fadeIn ? 'fade-in' : ''}`}>
       <h1>Contact Us</h1>
       <p>Have questions or need a quote? We're here to help!</p>
+      <p>
+        Prefer to call? Reach us at <a href="tel:+16012345678" className="phone-link">(601) 234-5678</a>
+      </p>
 
       {sent && <p className="success-message">✅ Message sent successfully!</p>}
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" className="cta-button">Send Message</button>
       </form>
     </div>
