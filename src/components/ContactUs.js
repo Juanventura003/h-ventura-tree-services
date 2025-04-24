@@ -37,7 +37,7 @@ function ContactUs() {
       <h1>Contact Us</h1>
       <p>Have questions or need a quote? We're here to help!</p>
       <p>
-        Prefer to call? Reach us at <a href="tel:+16012345678" className="phone-link">(601) 234-5678</a>
+        Prefer to call? Reach us at <a href="tel:+12404577371" className="phone-link">(240) 457-7371</a>
       </p>
 
       {sent && <p className="success-message">✅ Message sent successfully!</p>}
